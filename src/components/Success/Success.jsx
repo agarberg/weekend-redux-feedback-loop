@@ -5,29 +5,17 @@ import { HashRouter as Router, Route, Link } from "react-router-dom";
 
 function Success(){
   const history = useHistory()
-    const [feeling, setFeeling] = useState(0)
     const dispatch = useDispatch();
 
     const handleSubmit = event => {
         event.preventDefault();
-        dispatch({
-          type: 'ADD_FEELING',
-          payload: feeling
-        })
-        history.push('/Understanding')
+        history.push('/')
       }
     return (
         <> 
-        <h2>How are you feeling today?</h2>
-        <form onSubmit={handleSubmit} className="Feeling">
-          <input 
-            required 
-            placeholder="0-5" 
-            type="number" 
-            min="0" max="5"
-            onChange={(event) => setFeeling(event.target.value)}/>
-        <button type="submit">NEXT</button>
-        </form>
+        <h2>Feedback Submitted</h2>
+        <h2>Thank You!</h2>
+        <button type="submit">Leave New Feedback</button>
       </>
     )
 }

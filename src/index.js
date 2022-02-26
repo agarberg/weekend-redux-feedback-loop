@@ -36,7 +36,6 @@ const feedbackReducer = (state = [], action) => {
 ReactDOM.render(  
 <Provider store={reduxStore}>
 <App />
-<Feeling />
 </Provider>,
 document.getElementById("root"));
 registerServiceWorker();
