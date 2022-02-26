@@ -5,7 +5,7 @@ import { HashRouter as Router, Route, Link } from "react-router-dom";
 
 function Supported(){
     const history = useHistory()
-    const [supported, setSupported] = useState(0)
+    const [supported, setSupported] = useState('')
     const dispatch = useDispatch();
 
     const handleSubmit = event => {

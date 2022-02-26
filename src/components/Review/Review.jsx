@@ -10,13 +10,10 @@ function Review(){
     const supportedReducer = useSelector(store => store.supportedReducer)
     const commentReducer = useSelector(store => store.commentReducer)
     const history = useHistory()
-    const dispatch = useDispatch();
-    const reduxStore = useSelector(store => store)
 
     const handleSubmit = event => {
-        event.preventDefault();
-        axios
-        .post('/feedback',  )
+        // event.preventDefault();
+        axios.post('/feedback', {feelingReducer, understandingReducer, supportedReducer, commentReducer})
         .then((response) => {
             console.log('POSTING TO DATABASE');
             history.push('/Success')

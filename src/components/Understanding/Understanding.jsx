@@ -4,7 +4,7 @@ import {useHistory} from 'react-router-dom'
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 function Understanding(){
   const history = useHistory()
-    const [understanding, setUnderstanding] = useState(0)
+    const [understanding, setUnderstanding] = useState('')
     const dispatch = useDispatch();
 
     const handleSubmit = event => {
