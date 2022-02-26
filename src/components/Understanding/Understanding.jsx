@@ -24,6 +24,7 @@ function Understanding(){
             placeholder="0-5" 
             type="number" 
             min="0" max="5"
+            value={understanding}
             onChange={(event) => setUnderstanding(event.target.value)}/>
         <button type="submit">NEXT</button>
         </form>

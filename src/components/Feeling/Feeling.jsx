@@ -25,6 +25,7 @@ function Feeling(){
             placeholder="0-5" 
             type="number" 
             min="0" max="5"
+            value={feeling}
             onChange={(event) => setFeeling(event.target.value)}/>
         <button type="submit">NEXT</button>
         </form>

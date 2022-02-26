@@ -5,7 +5,7 @@ import { HashRouter as Router, Route, Link } from "react-router-dom";
 
 function Comments(){
     const history = useHistory()
-    const [comments, setComments] = useState(0)
+    const [comments, setComments] = useState('')
     const dispatch = useDispatch();
 
     const handleSubmit = event => {
@@ -23,6 +23,7 @@ function Comments(){
           <input 
             placeholder="comments"
             type="text" 
+            value={comments}
             onChange={(event) => setComments(event.target.value)}/>
         <button type="submit">NEXT</button>
         </form>

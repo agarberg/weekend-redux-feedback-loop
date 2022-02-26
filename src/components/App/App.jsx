@@ -7,6 +7,7 @@ import Feeling from '../Feeling/Feeling';
 import Success from '../Success/Success';
 import Supported from '../Supported/Supported';
 import Understanding from '../Understanding/Understanding';
+import Review from '../Review/Review';
 
 
 function App() {
