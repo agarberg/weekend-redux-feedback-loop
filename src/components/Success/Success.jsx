@@ -15,7 +15,7 @@ function Success(){
         <> 
         <h2>Feedback Submitted</h2>
         <h2>Thank You!</h2>
-        <button type="submit">Leave New Feedback</button>
+        <button onClick={handleSubmit}>Leave New Feedback</button>
       </>
     )
 }
