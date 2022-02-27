@@ -22,7 +22,7 @@ function App() {
       <Route path="/" exact>
         <Feeling/>
         </Route>
-      <Route path="/Success">
+      <Route path="/Success" exact>
         <Success/>
         </Route>
       <Route path="/Understanding">
@@ -34,10 +34,9 @@ function App() {
         <Route path="/Comments">
         <Comments/>
         </Route>
-        <Route path="/Review">
+        <Route path="/Review" exact>
         <Review/>
         </Route>
-        
     </div>
     </Router>
   );
