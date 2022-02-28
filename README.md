@@ -1,9 +1,12 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+Feedback Tracker
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This project was made to facilitate feedback between users and an administrator. The admin function has not been finished. 
+The user will go through screens asking for input using values between 0-5 and the last will ask for comments. A comment does not need to be inputted, but can if a user feels the need. 
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+To run this project, npm install must be done. To start the server, npm run server is required. to start the client side, npm run client is required. 
+
+Enjoy!
