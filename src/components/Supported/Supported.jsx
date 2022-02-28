@@ -1,13 +1,15 @@
 import {useState} from 'react';
 import {useDispatch} from 'react-redux'
 import {useHistory} from 'react-router-dom'
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+
 
 function Supported(){
+    //initalize state variables 
     const history = useHistory()
     const [supported, setSupported] = useState('')
     const dispatch = useDispatch();
 
+    //on submit click dispatch supported info
     const handleSubmit = event => {
         event.preventDefault();
         dispatch({

@@ -1,13 +1,14 @@
 import {useState} from 'react';
 import {useDispatch} from 'react-redux'
 import {useHistory} from 'react-router-dom'
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+
 
 function Feeling(){
+  //initalize state variables 
   const history = useHistory()
-    const [feeling, setFeeling] = useState(0)
-    const dispatch = useDispatch();
-
+  const [feeling, setFeeling] = useState(0)
+  const dispatch = useDispatch();
+  //on submit click dispatch feeling info
     const handleSubmit = event => {
         event.preventDefault();
         dispatch({
@@ -15,7 +16,7 @@ function Feeling(){
           payload: feeling
         })
         history.push('/Understanding')
-      }
+    }
     return (
         <> 
         <h2>How are you feeling today?</h2>

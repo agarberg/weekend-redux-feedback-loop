@@ -1,12 +1,14 @@
 import {useState} from 'react';
 import {useDispatch} from 'react-redux'
 import {useHistory} from 'react-router-dom'
-import { HashRouter as Router, Route, Link } from "react-router-dom";
+
 function Understanding(){
+    //initalize state variables 
   const history = useHistory()
     const [understanding, setUnderstanding] = useState('')
     const dispatch = useDispatch();
 
+        //on submit click dispatch understanding input 
     const handleSubmit = event => {
         event.preventDefault();
         dispatch({

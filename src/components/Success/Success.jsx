@@ -1,9 +1,9 @@
 import {useHistory} from 'react-router-dom'
 
 function Success(){
-  const history = useHistory()
+const history = useHistory()
 
-
+    //on click, go back to the first page 
     const handleSubmit = event => {
         event.preventDefault();
         history.push('/')
