@@ -10,20 +10,15 @@ import Understanding from '../Understanding/Understanding';
 import Header from '../Header/Header'
 import Review from '../Review/Review';
 
-
 function App() {
 
   return (
     <Router> 
     <div className='App'>
-      {/* <header className='App-header'>
-        <h1 className='App-title'>Feedback!</h1>
-        <h4>Don't forget it!</h4>
-      </header> */}
       <Route path="/" exact>
         <Header/>
         <Feeling/>
-        </Route>
+      </Route>
       <Route path="/Understanding">
         <Header/>
         <Understanding/>
@@ -35,13 +30,13 @@ function App() {
         <Route path="/Comments">
         <Header/>
         <Comments/>
-        </Route>
+      </Route>
         <Route path="/Review">
         <Review/>
       </Route>
       <Route path="/Success">
         <Success/>
-        </Route>
+      </Route>
     </div>
     </Router>
   );

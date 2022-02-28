@@ -23,7 +23,7 @@ function Feeling(){
         <form onSubmit={handleSubmit} className="Feeling">
           <input 
             required 
-            placeholder="0-5" 
+            placeholder="Feeling? 0-5" 
             type="number" 
             min="0" max="5"
             value={feeling}

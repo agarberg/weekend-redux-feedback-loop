@@ -24,7 +24,7 @@ function Supported(){
         <form onSubmit={handleSubmit} className="Supported">
           <input 
             required 
-            placeholder="0-5" 
+            placeholder="Supported? 0-5" 
             type="number" 
             min="0" max="5"
             value={supported}
