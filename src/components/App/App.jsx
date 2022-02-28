@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { HashRouter as Router, Route, Link } from "react-router-dom";
+//import components to APP
 import Comments from '../Comments/Comments';
 import Feeling from '../Feeling/Feeling';
 import Success from '../Success/Success';
@@ -34,13 +35,13 @@ function App() {
         <Route path="/Comments">
         <Header/>
         <Comments/>
-      <Route path="/Success" exact>
-        <Success/>
         </Route>
-      </Route>
-        <Route path="/Review" exact>
+        <Route path="/Review">
         <Review/>
       </Route>
+      <Route path="/Success">
+        <Success/>
+        </Route>
     </div>
     </Router>
   );

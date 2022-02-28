@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from "redux-logger";
+//allows store to comm with react 
 import { Provider } from "react-redux";
+import './index.css';
+import App from './components/App/App';
 
-
+//reducers to take in feedback based on action type
 const feelingReducer = (state = [], action) => {
     if (action.type === "ADD_FEELING") {
         return action.payload
@@ -32,7 +33,7 @@ const commentReducer = (state = [], action) => {
 }
         return state;
   };
-
+//create redux store with the 4 reducers 
   const reduxStore = createStore(
     combineReducers({
         feelingReducer,
@@ -40,6 +41,7 @@ const commentReducer = (state = [], action) => {
         supportedReducer,
         commentReducer, 
     }),
+    //enable logger 
     applyMiddleware(logger)
 )
 
