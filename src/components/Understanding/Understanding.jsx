@@ -23,7 +23,6 @@ function Understanding(){
         <form onSubmit={handleSubmit} className="Understanding">
           <input 
             required 
-            placeholder="Understanding? 0-5" 
             type="number" 
             min="0" max="5"
             value={understanding}

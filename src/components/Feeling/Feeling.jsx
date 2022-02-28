@@ -21,9 +21,8 @@ function Feeling(){
         <> 
         <h2>How are you feeling today?</h2>
         <form onSubmit={handleSubmit} className="Feeling">
-          <input 
+          <input
             required 
-            placeholder="Feeling? 0-5" 
             type="number" 
             min="0" max="5"
             value={feeling}
